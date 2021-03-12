@@ -50,7 +50,9 @@ jobs:
 
       - shell: bash
         run: |
-          tree -a
+          tree -a .
+          ls /usr/lib/jvm
+          ls /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64
           mvn cobertura:cobertura
           mvn cobertura:dump-datafile
 
