@@ -46,6 +46,7 @@ jobs:
           name: target_upload
       - shell: bash
         run: |
+          tree -a
           mvn cobertura:cobertura
           mvn cobertura:dump-datafile
 
