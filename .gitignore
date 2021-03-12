@@ -1,0 +1,12 @@
+target/*
+
+*.log
+
+.idea/*
+*.iml
+*.lst
+
+*.jar
+*.zip
+*.tar.gz
+*.rar
