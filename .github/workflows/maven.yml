@@ -38,7 +38,7 @@ jobs:
   test: 
     name: Test project
     needs: build
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Download directory
         uses: actions/download-artifact@v2
