@@ -36,6 +36,7 @@ jobs:
 
   
   test: 
+    name: Test project
     needs: build
     runs_on: ubuntu-latest
     steps:
