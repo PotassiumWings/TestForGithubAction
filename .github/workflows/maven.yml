@@ -40,7 +40,7 @@ jobs:
     runs_on: ubuntu-latest
     steps:
       - name: Download directory
-        users: actions/download-artifact@v2
+        uses: actions/download-artifact@v2
         with:
           name: target_upload
       - shell: bash
