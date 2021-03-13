@@ -33,7 +33,6 @@ jobs:
       with:
         name: target_upload
         path: ./target
-
   
   test: 
     name: Test project
@@ -58,6 +57,10 @@ jobs:
           tree -a .
           mvn cobertura:cobertura
           mvn cobertura:dump-datafile
+      - uses: codecov/codecov-action@v1
+        with:
+          verbose: true
+
 
     
 
